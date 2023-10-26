@@ -1,3 +1,5 @@
+publish_to: none
+
 name: image_picker_for_web
 description: Web platform implementation of image_picker
 repository: https://github.com/flutter/packages/tree/main/packages/image_picker/image_picker_for_web
@@ -21,7 +23,10 @@ dependencies:
     sdk: flutter
   flutter_web_plugins:
     sdk: flutter
-  image_picker_platform_interface: ^2.9.0
+  image_picker_platform_interface:
+     git:
+      url: https://github.com/SebastianJipa/packages.git
+      path: packages/image_picker/image_picker_platform_interface
   mime: ^1.0.4
 
 dev_dependencies:
